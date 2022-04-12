@@ -1,0 +1,11 @@
+function reverseString(input){
+
+    let wordLength = input.length;
+    let word='';
+    for(i=1;i<=wordLength;i++){
+        let letter = input[i];
+        
+    word += `${input[wordLength-i]}`;
+    }
+console.log(word);
+}
