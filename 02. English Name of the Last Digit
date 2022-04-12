@@ -1,0 +1,36 @@
+function englishNameLastDigit(input) {
+
+    let number = input;
+    let str = number.toString();
+    let word = '';
+    for (let i = 0; i < str.length; i++) {
+        if (i === str.length - 1) {
+            let num = str[i];
+            num = Number(num);
+           
+            if (num === 1) {
+                word = 'one';
+            } else if (num === 2) {
+                word = 'two';
+            } else if (num === 3) {
+                word = 'three';
+            } else if (num === 4) {
+                word = 'four';
+            } else if (num === 5) {
+                word = 'five';
+            } else if (num === 6) {
+                word = 'six';
+            } else if (num === 7) {
+                word = 'seven';
+            } else if (num === 8) {
+                word = 'eight';
+            } else if (num === 9) {
+                word = 'nine';
+            } else if (num === 0) {
+                word = 'zero';
+            }
+        }
+
+    }
+console.log(word);
+}
